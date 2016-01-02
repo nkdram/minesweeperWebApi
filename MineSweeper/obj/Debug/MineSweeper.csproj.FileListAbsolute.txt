@@ -1,0 +1,5 @@
+C:\MineProgram\MineSweeper\bin\Debug\MineSweeper.exe.config
+C:\MineProgram\MineSweeper\bin\Debug\MineSweeper.exe
+C:\MineProgram\MineSweeper\bin\Debug\MineSweeper.pdb
+C:\MineProgram\MineSweeper\obj\Debug\MineSweeper.exe
+C:\MineProgram\MineSweeper\obj\Debug\MineSweeper.pdb

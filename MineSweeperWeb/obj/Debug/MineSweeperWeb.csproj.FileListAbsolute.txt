@@ -1,0 +1,15 @@
+C:\MineProgram\MineSweeperWeb\bin\MineSweeperWeb.dll
+C:\MineProgram\MineSweeperWeb\bin\MineSweeperWeb.pdb
+C:\MineProgram\MineSweeperWeb\bin\MineSweeper.exe
+C:\MineProgram\MineSweeperWeb\bin\MineSweeper.pdb
+C:\MineProgram\MineSweeperWeb\obj\Debug\MineSweeperWeb.csprojResolveAssemblyReference.cache
+C:\MineProgram\MineSweeperWeb\obj\Debug\MineSweeperWeb.dll
+C:\MineProgram\MineSweeperWeb\obj\Debug\MineSweeperWeb.pdb
+C:\MineProgram\MineSweeperWeb\bin\Newtonsoft.Json.dll
+C:\MineProgram\MineSweeperWeb\bin\System.Net.Http.Formatting.dll
+C:\MineProgram\MineSweeperWeb\bin\System.Web.Http.dll
+C:\MineProgram\MineSweeperWeb\bin\System.Web.Http.WebHost.dll
+C:\MineProgram\MineSweeperWeb\bin\Newtonsoft.Json.xml
+C:\MineProgram\MineSweeperWeb\bin\System.Net.Http.Formatting.xml
+C:\MineProgram\MineSweeperWeb\bin\System.Web.Http.xml
+C:\MineProgram\MineSweeperWeb\bin\System.Web.Http.WebHost.xml
