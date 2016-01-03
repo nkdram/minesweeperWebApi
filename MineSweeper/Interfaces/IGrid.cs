@@ -10,7 +10,5 @@ namespace MineSweeper.Interfaces
         MineSweeper.Lib.Enumerations.Difficulty Difficulty { get; }
         IList<Box> GetBoxes();
         void LoadBoxes();
-        //void AddItem(IBox box);
-        //void RemoveItem(Position position);
     }
 }
