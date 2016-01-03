@@ -6,9 +6,9 @@ namespace MineSweeper.Interfaces
 {
     interface IGrid
     {
-        ICollection<Box> Boxes { get; }
+        IList<Box> Boxes { get; }
         MineSweeper.Lib.Enumerations.Difficulty Difficulty { get; }
-        ICollection<Box> GetBoxes();
+        IList<Box> GetBoxes();
         void LoadBoxes();
         //void AddItem(IBox box);
         //void RemoveItem(Position position);

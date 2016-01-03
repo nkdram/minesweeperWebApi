@@ -7,7 +7,7 @@ namespace MineSweeper.Lib
 {
     public class Grid : IGrid
     {
-        public ICollection<Box> Boxes { get; private set; }
+        public IList<Box> Boxes { get; private set; }
 
         [System.ComponentModel.DefaultValue(MineSweeper.Lib.Enumerations.Difficulty.Easy)]
         public MineSweeper.Lib.Enumerations.Difficulty Difficulty { get; private set; }
@@ -19,7 +19,7 @@ namespace MineSweeper.Lib
         [System.ComponentModel.DefaultValue(0)]
         public int mineCount { get; set; }
 
-        public ICollection<Box> GetBoxes()
+        public IList<Box> GetBoxes()
         {
             return this.Boxes;
         }
@@ -57,7 +57,7 @@ namespace MineSweeper.Lib
 
         private void BuildBoxes(int maxX, int maxY, int mineCount)
         {
-            var Boxes = new System.Collections.ObjectModel.Collection<Box>();
+            var Boxes = new List<Box>();
             this.maxX = maxX;
             this.maxY = maxY;
             this.mineCount = mineCount;
@@ -77,6 +77,8 @@ namespace MineSweeper.Lib
 
             //Set mines in Grid
             for (int i = 0; i < maxX; i++)
+            {
+                var temp = new List<Box>();
                 for (int j = 0; j < maxY; j++)
                 {
                     var Box = new Box();
@@ -87,16 +89,18 @@ namespace MineSweeper.Lib
                         Box.SetMine();
 
                     //Calculating Adjacent mines
-                    for (int posX = (i - 1 < 0 ? 0 : i - 1); posX < (i + 1 >= maxX ? (maxX - 1) : i + 1); posX++)
-                        for (int posY = (j - 1 < 0 ? 0 : j - 1); posY < (j + 1 >= maxY ? (maxY - 1) : j + 1); posY++)
+                    for (int posX = (i - 1 < 0 ? 0 : i - 1); posX <= (i + 1 >= maxX ? (maxX - 1) : i + 1); posX++)
+                        for (int posY = (j - 1 < 0 ? 0 : j - 1); posY <= (j + 1 >= maxY ? (maxY - 1) : j + 1); posY++)
                         {
                             if (!(posX == i && posY == j) && minePositions.Contains(posX.ToString() + "," + posY.ToString()))
                                 adjacentMines++;
                         }
                     Box.SetAdjacentMineCount(adjacentMines);
-                    Boxes.Add(Box);
+                    temp.Add(Box);
                 }
-
+                Boxes.InsertRange(0, temp);                
+            }
+           
             this.Boxes = Boxes;
         }
 

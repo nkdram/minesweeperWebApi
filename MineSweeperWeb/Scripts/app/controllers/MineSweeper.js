@@ -14,7 +14,8 @@ myApp.controller('MineSweeperController', function ($scope, $http, $interval, $u
     $scope.boxClick = function (position, box) {
         //If mine is Clicked - End of Game
         if (box.hasMine && !box.clicked) {
-            //$scope.open();
+            box.bang = true;
+            $scope.open();
         }
         else if (!box.clicked) {
             box.clicked = true;

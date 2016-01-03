@@ -68,7 +68,8 @@
                               }"
                               md-colspan-gt-sm="{{1}}"
                               md-rowspan-gt-sm="{{1}}" md-ink-ripple class="pointer" ng-click="boxClick(box.Position,box)" >
-                              <span ng-if="box.clicked" class="badge-warning" ng-bind="box.AdjacentMines"></span>
+                              <span ng-if="box.clicked" class="label label-warning" ng-bind="box.AdjacentMines"></span>
+                              <span ng-if="box.bang" class="label label-primary" > <i class="glyphicon glyphicon-certificate"></i></span>
                           </md-grid-tile>
                         </md-grid-list>
                       </md-content>
