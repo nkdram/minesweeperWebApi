@@ -12,6 +12,13 @@ namespace MineSweeper.Lib
         [System.ComponentModel.DefaultValue(MineSweeper.Lib.Enumerations.Difficulty.Easy)]
         public MineSweeper.Lib.Enumerations.Difficulty Difficulty { get; private set; }
 
+        [System.ComponentModel.DefaultValue(0)]
+        public int maxX { get; set; }
+        [System.ComponentModel.DefaultValue(0)]
+        public int maxY { get; set; }
+        [System.ComponentModel.DefaultValue(0)]
+        public int mineCount { get; set; }
+
         public ICollection<Box> GetBoxes()
         {
             return this.Boxes;
@@ -51,6 +58,9 @@ namespace MineSweeper.Lib
         private void BuildBoxes(int maxX, int maxY, int mineCount)
         {
             var Boxes = new System.Collections.ObjectModel.Collection<Box>();
+            this.maxX = maxX;
+            this.maxY = maxY;
+            this.mineCount = mineCount;
 
             //Random Places of mines
             List<int> positions = Enumerable.Range(0, maxX * maxY).ToList();
@@ -71,9 +81,19 @@ namespace MineSweeper.Lib
                 {
                     var Box = new Box();
                     var position = new Position(i, j);
+                    var adjacentMines = 0;
                     Box.Create(position, Enumerations.BoxType.Empty);
                     if (minePositions.Contains(i.ToString() + "," + j.ToString()))
                         Box.SetMine();
+
+                    //Calculating Adjacent mines
+                    for (int posX = (i - 1 < 0 ? 0 : i - 1); posX < (i + 1 >= maxX ? (maxX - 1) : i + 1); posX++)
+                        for (int posY = (j - 1 < 0 ? 0 : j - 1); posY < (j + 1 >= maxY ? (maxY - 1) : j + 1); posY++)
+                        {
+                            if (!(posX == i && posY == j) && minePositions.Contains(posX.ToString() + "," + posY.ToString()))
+                                adjacentMines++;
+                        }
+                    Box.SetAdjacentMineCount(adjacentMines);
                     Boxes.Add(Box);
                 }
 

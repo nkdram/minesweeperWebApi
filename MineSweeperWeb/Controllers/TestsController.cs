@@ -5,9 +5,10 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace MineSweeperWeb.App_Code.Controller
+
+namespace MineSweeperWeb.Controllers
 {
-    public class MainController : ApiController
+    public class TestsController : ApiController
     {
         // GET api/<controller>
         public IEnumerable<string> Get()

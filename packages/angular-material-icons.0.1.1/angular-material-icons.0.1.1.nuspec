@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>angular-material-icons</id>
+    <version>0.1.1</version>
+    <title>Angular Material Icons</title>
+    <authors>@Jarlotee</authors>
+    <owners>@Jarlotee</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SVG Icon Support for Angular Materials</description>
+    <summary>Until the icons are officially bundled with angular-materials</summary>
+    <releaseNotes>readme example correction</releaseNotes>
+    <language>en-US</language>
+    <tags>angular angular-material</tags>
+  </metadata>
+</package>

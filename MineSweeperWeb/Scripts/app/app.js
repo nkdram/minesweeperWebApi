@@ -1,4 +1,4 @@
-﻿var myApp = angular.module('minesweeper', ['ngRoute']);
+﻿var myApp = angular.module('minesweeper', ['ngRoute', 'ngMaterial', 'ui.bootstrap']);
 
 //myApp.config('$routeProvider', function ($routeProvider) {
 //    $routeProvider

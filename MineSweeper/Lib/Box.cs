@@ -43,6 +43,11 @@ namespace MineSweeper.Lib
             this.BoxType = Enumerations.BoxType.Mine;
         }
 
+        public void SetAdjacentMineCount(int mineCount)
+        {
+            this.AdjacentMines = mineCount;
+        }
+
         public void ToggleFlag()
         {
             isFlagged = isFlagged ? false : true;
