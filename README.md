@@ -1,5 +1,5 @@
 
-<h1>Minesweeper Using .Net and AnuglarJS </h1>
+<h1>Minesweeper Using .Net and AngularJS </h1>
 
 Same old game developed using .Net, AngularJS ...
 
