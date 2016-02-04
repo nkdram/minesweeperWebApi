@@ -8,10 +8,10 @@ Same old game developed using .Net, AngularJS and Bootstrap ...
 Download and try it .. 
 
 
-![Select Difficulty](https://github.com/nkdram/minesweeperWebApi/tree/master/MineSweeperWeb/images/SelectDifficulty.png?raw=true "Select Difficulty")
+![Select Difficulty](https://raw.githubusercontent.com/nkdram/minesweeperWebApi/master/MineSweeperWeb/images/SelectDifficulty.png?raw=true "Select Difficulty")
 
-![Responsiveness](https://github.com/nkdram/minesweeperWebApi/tree/master/MineSweeperWeb/images/Responsive.png?raw=true "Responsive")
+![Responsiveness](https://raw.githubusercontent.com/nkdram/minesweeperWebApi/master/MineSweeperWeb/images/Responsive.png?raw=true "Responsive")
 
-![Game](https://github.com/nkdram/minesweeperWebApi/tree/master/MineSweeperWeb/images/Game.png?raw=true "Game")
+![Game](https://raw.githubusercontent.com/nkdram/minesweeperWebApi/master/MineSweeperWeb/images/Game.png?raw=true "Game")
 
-![Game Over](https://github.com/nkdram/minesweeperWebApi/tree/master/MineSweeperWeb/images/Game2.png?raw=true "Game Over")
+![Game Over](https://raw.githubusercontent.com/nkdram/minesweeperWebApi/master/MineSweeperWeb/images/Game2.png?raw=true "Game Over")
